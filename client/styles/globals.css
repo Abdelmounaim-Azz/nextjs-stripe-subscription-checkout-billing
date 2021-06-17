@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "Baloo Da 2", cursive;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+/* Price Subscription */
+.pricing-plan {
+  padding: 90px 0px;
+  background: #f7f7f7;
+}
+
+.pricing-plan {
+  padding-top: 15px;
+}
+
+.main {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  font-family: "Open Sans";
+  width: 1170px;
+  margin: 0 auto;
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0 none;
+}
+.price-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+.price-table tr td {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 8px 24px;
+  font-size: 14px;
+}
+.price-table tr td:first-child {
+  border-left: 0 none;
+}
+.price-table tr td:not(:first-child) {
+  text-align: center;
+}
+.price-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.price-table .fa-check {
+  color: #5336ca;
+}
+.price-table .fa-times {
+  color: #d8d6e3;
+}
+
+/* Highlighted column */
+
+.price-table tr.price-table-head td {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+.price-table tr.price-table-head {
+  background-color: #5336ca;
+  color: #ffffff;
+}
+.price-table td.price {
+  color: #f43f54;
+  padding: 16px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.price-table td.price button {
+  background-color: #5336ca;
+  color: #ffffff;
+  padding: 12px 32px;
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 64px;
+  cursor: pointer;
+}
+.price-table td.price button:hover {
+  opacity: 0.9;
+}
+.price-table td.price input {
+  background-color: #5336ca;
+  color: #ffffff;
+  padding: 12px 32px;
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 64px;
+}
+.price-table td.price input:hover {
+  opacity: 0.9;
+}
+.price-table td.price-table-popular {
+  font-family: "Montserrat";
+  border-top: 3px solid #5336ca;
+  color: #5336ca;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 12px 48px;
+  font-weight: 700;
+}
+.price-table .price-blank {
+  background-color: #fafafa;
+  border: 0 none;
+}
+
+.price-table svg {
+  width: 90px;
+  fill: #5336ca;
+}
